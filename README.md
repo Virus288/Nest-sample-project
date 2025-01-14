@@ -1,4 +1,4 @@
-# Node.js Dependency injection template
+# Nest.js - sample project
 
 This project is a simple node.js template built with typescript, with dependency injection integrated. Its extremally simple and includes only the most necessary packages to make your work faster. This template uses ESM. Keep this in mind while working on this project. For some reason, people do not know what esm is.
 
