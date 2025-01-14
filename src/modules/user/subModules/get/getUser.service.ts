@@ -12,7 +12,7 @@ export default class GetUserService {
   async getUser(dto: GetUserDto): Promise<IUserEntity | null> {
     Logger.debug('User - get service', 'User query', dto);
 
-    if (dto.id) return this.repo.get(dto.id);
-    return this.repo.getByLogin(dto.login!);
+    if (dto.login) return this.repo.getByLogin(dto.login);
+    return this.repo.get(dto.id);
   }
 }

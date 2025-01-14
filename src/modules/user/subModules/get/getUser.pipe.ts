@@ -2,7 +2,7 @@ import { PipeTransform, Injectable, BadRequestException } from '@nestjs/common';
 import { plainToInstance } from 'class-transformer';
 import { validate } from 'class-validator';
 import GetUserDto from './getUser.dto';
-import { IGetUserReq } from './types';
+import { IGetUserReq } from './getUser.types';
 
 @Injectable()
 export default class GetUserValidationPipe implements PipeTransform {

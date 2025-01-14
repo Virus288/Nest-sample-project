@@ -8,7 +8,7 @@ const config: JestConfigWithTsJest = {
   extensionsToTreatAsEsm: ['.ts'],
   rootDir: "src",
   preset: 'ts-jest/presets/default-esm',
-  testMatch: ['**/*.spec.ts'],
+  testMatch: ['**/*.spec.ts', '**/*-spec.ts'],
   testEnvironment: 'node',
   forceExit: true,
   clearMocks: true,

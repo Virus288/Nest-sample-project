@@ -12,14 +12,15 @@
     "start:dev": "cross-env NODE_ENV=development nest start --watch",
     "start:debug": "cross-env NODE_ENV=development nest start --debug --watch",
     "build": "nest build",
+    "build:watch": "nest build -w",
     "lint": "cross-env NODE_ENV=development eslint -c eslint.config.mjs . --fix",
     "lintStaged": "npx lint-staged",
     "listErrors": "node_modules/.bin/tsc --skipLibCheck",
-    "test": "cross-env NODE_ENV=test jest --config jest.config.ts",
+    "test:unit": "cross-env NODE_ENV=test jest --config jest.config.ts",
     "test:watch": "cross-env NODE_ENV=test jest --watch --config jest.config.ts",
     "test:cov": "cross-env NODE_ENV=test jest --coverage --config jest.config.ts",
     "test:debug": "cross-env NODE_ENV=test node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand --config jest.config.ts",
-    "test:e2e": "cross-env NODE_ENV=test jest --config ./test/jest-e2e.ts"
+    "test:e2e": "cross-env NODE_ENV=test jest --config ./test/jest.config.e2e.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",

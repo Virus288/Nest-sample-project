@@ -1,5 +1,5 @@
-import { IsString, MaxLength, MinLength, ValidateIf } from 'class-validator';
-import type { IGetUserDto } from './types';
+import { IsString, MaxLength, MinLength, Length, ValidateIf } from 'class-validator';
+import type { IGetUserDto } from './getUser.types';
 
 export default class GetUserDto implements IGetUserDto {
   @ValidateIf((o: IGetUserDto) => o.id === undefined)
@@ -10,7 +10,6 @@ export default class GetUserDto implements IGetUserDto {
 
   @ValidateIf((o: IGetUserDto) => o.login === undefined)
   @IsString()
-  @MinLength(24)
-  @MaxLength(24)
+  @Length(24, 24)
   id?: string;
 }
