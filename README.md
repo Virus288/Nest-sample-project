@@ -1,6 +1,6 @@
 # Nest.js - sample project
 
-This project is a simple node.js template built with typescript, with dependency injection integrated. Its extremally simple and includes only the most necessary packages to make your work faster. This template uses ESM. Keep this in mind while working on this project. For some reason, people do not know what esm is.
+This project is a sample nest.js project, built to learn it. Its buggy and not finished and might never be. This is just a sample 
 
 > [!Warning].
 > This package uses extremely strict eslint, which I modified to my needs. Please take a look and modify it however you like. My style of writing code might not be for you.
