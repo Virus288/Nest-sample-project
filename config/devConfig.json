@@ -1,0 +1,6 @@
+{
+  "mongoURL": "mongodb://user:password@adress:port",
+  "corsOrigin": ["localhost"],
+  "port": 5003,
+  "rateLimit": 30
+}
